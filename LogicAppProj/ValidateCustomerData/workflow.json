@@ -1,0 +1,67 @@
+{
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "triggers": {
+        "When_a_HTTP_request_is_received": {
+          "type": "Request",
+          "kind": "Http",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "customerId": { "type": "string" },
+                "email": { "type": "string" },
+                "phoneNumber": { "type": "string" }
+              },
+              "required": [ "customerId", "email", "phoneNumber" ]
+            }
+          }
+        }
+      },
+      "actions": {
+        "Validate_Email": {
+          "type": "Function",
+          "inputs": {
+            "method": "POST",
+            "function": "CustomerValidation.Validator",
+            "assemblyPath": "bin/CustomerValidation.dll",
+            "methodName": "ValidateEmail",
+            "parameters": [ "@triggerBody()?['email']" ]
+          },
+          "runAfter": {}
+        },
+        "Validate_Phone": {
+          "type": "Function",
+          "inputs": {
+            "method": "POST",
+            "function": "CustomerValidation.Validator",
+            "assemblyPath": "bin/CustomerValidation.dll",
+            "methodName": "ValidatePhoneNumber",
+            "parameters": [ "@triggerBody()?['phoneNumber']" ]
+          },
+          "runAfter": {
+            "Validate_Email": [ "Succeeded" ]
+          }
+        },
+        "Response": {
+          "type": "Response",
+          "kind": "Http",
+          "inputs": {
+            "statusCode": 200,
+            "body": {
+              "customerId": "@triggerBody()?['customerId']",
+              "emailValidation": "@body('Validate_Email')",
+              "phoneValidation": "@body('Validate_Phone')",
+              "status": "Success"
+            }
+          },
+          "runAfter": {
+            "Validate_Phone": [ "Succeeded" ]
+          }
+        }
+      },
+      "outputs": {}
+    }
+  }
+  

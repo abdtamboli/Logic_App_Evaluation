@@ -1,0 +1,12 @@
+C:\HCA_Health\CustomerValidation\bin\Debug\net6.0\CustomerValidation.deps.json
+C:\HCA_Health\CustomerValidation\bin\Debug\net6.0\CustomerValidation.dll
+C:\HCA_Health\CustomerValidation\bin\Debug\net6.0\ref\CustomerValidation.dll
+C:\HCA_Health\CustomerValidation\bin\Debug\net6.0\CustomerValidation.pdb
+C:\HCA_Health\CustomerValidation\obj\Debug\net6.0\CustomerValidation.csproj.AssemblyReference.cache
+C:\HCA_Health\CustomerValidation\obj\Debug\net6.0\CustomerValidation.GeneratedMSBuildEditorConfig.editorconfig
+C:\HCA_Health\CustomerValidation\obj\Debug\net6.0\CustomerValidation.AssemblyInfoInputs.cache
+C:\HCA_Health\CustomerValidation\obj\Debug\net6.0\CustomerValidation.AssemblyInfo.cs
+C:\HCA_Health\CustomerValidation\obj\Debug\net6.0\CustomerValidation.csproj.CoreCompileInputs.cache
+C:\HCA_Health\CustomerValidation\obj\Debug\net6.0\CustomerValidation.dll
+C:\HCA_Health\CustomerValidation\obj\Debug\net6.0\ref\CustomerValidation.dll
+C:\HCA_Health\CustomerValidation\obj\Debug\net6.0\CustomerValidation.pdb
