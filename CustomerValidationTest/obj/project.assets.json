@@ -27,19 +27,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\iamab\\.nuget\\packages\\": {}
+    "/Users/abhi/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\HCA_Health\\CustomerValidationTest\\CustomerValidationTest.csproj",
+      "projectUniqueName": "/Users/abhi/Abhi/Logic_app/Logic_App_Evaluation/CustomerValidationTest/CustomerValidationTest.csproj",
       "projectName": "CustomerValidationTest",
-      "projectPath": "C:\\HCA_Health\\CustomerValidationTest\\CustomerValidationTest.csproj",
-      "packagesPath": "C:\\Users\\iamab\\.nuget\\packages\\",
-      "outputPath": "C:\\HCA_Health\\CustomerValidationTest\\obj\\",
+      "projectPath": "/Users/abhi/Abhi/Logic_app/Logic_App_Evaluation/CustomerValidationTest/CustomerValidationTest.csproj",
+      "packagesPath": "/Users/abhi/.nuget/packages/",
+      "outputPath": "/Users/abhi/Abhi/Logic_app/Logic_App_Evaluation/CustomerValidationTest/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\iamab\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/abhi/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -51,8 +51,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\HCA_Health\\CustomerValidation\\CustomerValidation.csproj": {
-              "projectPath": "C:\\HCA_Health\\CustomerValidation\\CustomerValidation.csproj"
+            "/Users/abhi/Abhi/Logic_app/Logic_App_Evaluation/CustomerValidation/CustomerValidation.csproj": {
+              "projectPath": "/Users/abhi/Abhi/Logic_app/Logic_App_Evaluation/CustomerValidation/CustomerValidation.csproj"
             }
           }
         }
@@ -61,7 +61,13 @@
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net6.0": {
@@ -72,16 +78,31 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.36, 6.0.36]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.osx-arm64",
+            "version": "[6.0.36, 6.0.36]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.36, 6.0.36]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.136\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.304/RuntimeIdentifierGraph.json"
       }
     }
   }

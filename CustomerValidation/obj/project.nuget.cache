@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "SbeHZZawdUNQMSML5p1ybK57KQJ+TvrkXiFR01VylvdE/punFXXDWorSfcViWL2GiO/2y8tqQP24QUfj69UJMg==",
+  "dgSpecHash": "5kE/zSsZET0=",
   "success": true,
-  "projectFilePath": "C:\\HCA_Health\\CustomerValidation\\CustomerValidation.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/abhi/Abhi/Logic_app/Logic_App_Evaluation/CustomerValidation/CustomerValidation.csproj",
+  "expectedPackageFiles": [
+    "/Users/abhi/.nuget/packages/microsoft.netcore.app.ref/6.0.36/microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
+    "/Users/abhi/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.36/microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -16,7 +16,10 @@
       },
       "CustomerValidation/1.0.0": {
         "runtime": {
-          "CustomerValidation.dll": {}
+          "CustomerValidation.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
